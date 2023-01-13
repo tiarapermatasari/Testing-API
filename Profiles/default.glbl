@@ -9,4 +9,9 @@
       <initValue>'https://reqres.in/'</initValue>
       <name>BaseURL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>getEmail</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

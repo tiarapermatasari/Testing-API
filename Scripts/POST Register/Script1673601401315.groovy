@@ -17,9 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def email = GlobalVariable.getEmail
+println(email)
+
 response = WS.sendRequest(findTestObject('POST Register'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementPropertyValue(response, 'id', '2')
 

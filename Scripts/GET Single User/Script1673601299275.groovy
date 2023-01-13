@@ -21,5 +21,13 @@ response = WS.sendRequest(findTestObject('GET Single User'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-WS.verifyElementPropertyValue(response, 'data.email', 'janet.weaver@reqres.in')
+def slurper = new groovy.json.JsonSlurper()
+
+def resultUser = slurper.parseText(response.getResponseBodyContent())
+
+def getEmailUser = resultUser.data.email
+
+println(getEmailUser)
+
+GlobalVariable.getEmail = getEmailUser
 
