@@ -9,9 +9,4 @@
       <initValue>'https://reqres.in/'</initValue>
       <name>BaseURL</name>
    </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'200'</initValue>
-      <name>SuccessCode</name>
-   </GlobalVariableEntity>
 </GlobalVariableEntities>
